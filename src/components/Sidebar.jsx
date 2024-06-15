@@ -59,7 +59,7 @@ const Sidebar = () => {
 
   const handleLogout = () => {
     dispatch(logout());
-    navigate("/email");
+    navigate("/");
     localStorage.clear();
   };
 

@@ -18,7 +18,7 @@ const CheckPasswordPage = () => {
 
   useEffect(() => {
     if (!location?.state?.name) {
-      navigate("/email");
+      navigate("/");
     }
   }, []);
 
@@ -60,7 +60,7 @@ const CheckPasswordPage = () => {
         setData({
           password: "",
         });
-        navigate("/");
+        navigate("/chat");
       }
     } catch (error) {
       toast.error(error?.response?.data?.message);

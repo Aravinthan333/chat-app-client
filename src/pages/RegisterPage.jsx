@@ -180,10 +180,7 @@ const RegisterPage = () => {
         </form>
         <p className="my-3 text-center">
           Already have account ?{" "}
-          <Link
-            to={"/email"}
-            className="hover:text-primary font-semibold underline"
-          >
+          <Link to={"/"} className="hover:text-primary font-semibold underline">
             Login
           </Link>
         </p>

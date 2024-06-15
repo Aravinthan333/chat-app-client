@@ -35,7 +35,7 @@ const Home = () => {
 
       if (response.data.data.logout) {
         dispatch(logout());
-        navigate("/email");
+        navigate("/");
       }
 
       console.log("current user Details", response);
@@ -68,7 +68,7 @@ const Home = () => {
     };
   }, []);
 
-  const basePath = location.pathname === "/";
+  const basePath = location.pathname === "/chat";
 
   return (
     <div className="grid lg:grid-cols-[300px,1fr] h-screen max-h-screen">
