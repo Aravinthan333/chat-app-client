@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "" || "email",
+        path: "",
         element: (
           <AuthLayouts>
             <CheckEmailPage />
@@ -47,7 +47,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/chat",
+        path: "chat",
         element: <Home />,
         children: [
           {
